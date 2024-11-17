@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lotería Mexicana</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Lotería Mexicana</h1>
+    <div class="tablero">
+        {% for i in range(rows) %}
+            <div class="fila">
+                {% for j in range(cols) %}
+                    <div class="carta" data-index-i="{{ i }}" data-index-j="{{ j }}">
+                        <span>{{ cartas[i * cols + j] }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

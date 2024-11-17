@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #287fe4;
+    font-weight: bold;
+}
+
+.tablero {
+    display: inline-block;
+    border: 2px solid #333;
+    margin: 20px auto;
+}
+
+.fila {
+    display: flex;
+}
+
+.carta {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.carta span {
+    display: block;
+    padding: 10px;
+}
+
+.carta:nth-of-type(3n+1) {
+    background-color: #287fe4; 
+}
+
+.carta:nth-of-type(3n+2) {
+    background-color: #eadb00; 
+}
+
+.carta:nth-of-type(3n) {
+    background-color: #dda8c4; 
+}
