@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Visitas</title>
+</head>
+<body>
+    <h1>Has visitado esta página {{ visitas }} veces</h1>
+    {% if 'reinicios' in session %}
+        <p>El contador se ha reiniciado {{ session['reinicios'] }} veces</p>
+    {% endif %}
+    
+    <a href="/incrementar_visitas">Incrementar visitas en 2</a><br>
+    <a href="/reiniciar_visitas">Reiniciar contador a 0</a><br>
+    <a href="/destruir_sesion">Restablecer contador de visitas</a><br>
+
+    <form action="/incrementar_personalizado" method="POST">
+        <label for="incremento">Incrementar visitas por:</label>
+        <input type="number" id="incremento" name="incremento" required>
+        <button type="submit">Incrementar</button>
+    </form>
+</body>
+</html>
