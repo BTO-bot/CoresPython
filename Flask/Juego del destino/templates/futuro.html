@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu Destino</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>{{ mensaje | safe }}</h2>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">¡Jugar de nuevo!</a>
+    </div>
+</body>
+</html>

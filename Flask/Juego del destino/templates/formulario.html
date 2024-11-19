@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>¿Quieres conocer tu futuro?</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h1>¿Quieres conocer tu futuro?</h1>
+        <p>Coloca las respuestas y te diremos tu destino</p>
+        <form action="{{ url_for('enviar') }}" method="post">
+            <div class="form-group">
+                <label>Tu nombre:</label>
+                <input type="text" name="nombre" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Un lugar:</label>
+                <input type="text" name="lugar" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Un número:</label>
+                <input type="number" name="numero" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Tu comida favorita:</label>
+                <input type="text" name="comida" class="form-control" required>
+            </div>
+            <button type="submit" class="btn">Ver mi destino</button>
+        </form>
+    </div>
+</body>
+</html>

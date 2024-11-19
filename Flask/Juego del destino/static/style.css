@@ -1,0 +1,68 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    background-color: #007bff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 500px;
+}
+
+.form-container h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    text-align: center;
+    font-size: 14px;
+    color: #d0e6ff;
+    margin-bottom: 20px;
+}
+
+.form-container .form-control {
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    background-color: #17a2b8;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #138496;
+}
+
+/* Colores para el texto en "futuro"*/
+.nombre {
+    color: green;
+}
+
+.lugar {
+    color: #e5e619;
+}
+
+.numero {
+    color: blue;
+}
+
+.comida {
+    color: #00ced1; 
+}
